@@ -1,0 +1,32 @@
+<div class="login_limiter">
+    <div class="login_container">
+        <div class="login_wrap">
+			<form class="login_form validate-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+	        	<div *ngIf="messag.length > 0" class="alert alert-danger" role="alert">
+	        		{{messag}}
+	        	</div>
+				<span class="login_title">
+					Login
+				</span>
+				<div class="form-group">
+					<label for="idPhone">Telefono</label>
+					<input type="email" class="form-control" id="idPhone" formControlName="phone">
+				</div>
+				<div class="form-group">
+					<label for="idpass">Contraseña</label>
+					<input type="password" class="form-control" id="idpass" formControlName="password">
+				</div>
+				<div class="form-group form-check">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1">
+					<label class="form-check-label" for="exampleCheck1">Check me out</label>
+				</div>
+				<button type="submit" class="btn btn-primary btn-block">INICIAR SESSIÓN</button>
+				<a class="login_pass">¿Olvido su contraseña?.</a>
+
+				<!-- <pre>{{loginForm.value | json}}</pre> -->
+			</form>
+            <div class="login_section_content" style="background-image: url('./../assets/pro_new.jpg');">
+            </div>
+        </div>
+    </div>
+</div>

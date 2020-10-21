@@ -1,0 +1,33 @@
+<div class="container-fluid">
+	<div class="card">
+		<div class="card-body">
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item active" aria-current="page">
+						Home
+					</li>
+				</ol>
+			</nav>
+
+			<div class="row justify-content-md-center">
+				<div class="card home_card_color w-40">
+					<img src="./../assets/profile.png" class="card-img-top home_img" alt="...">
+					<div class="card-body">
+						<h5 class="card-title text-center">Bienvenido al sistema.</h5>
+						<div class="row align-items-center">
+						    <div class="col">
+								<p class="card-text">
+									<strong> Nombre y Apellido : </strong> {{dataUser.name}}
+								</p>
+								<p class="card-text">
+									<strong> Email : </strong> {{dataUser.email}}
+								</p>
+						    </div>
+						</div>
+						<button type="submint" class="btn btn-danger btn-block" (click)="onclose();"> CERRAR SESSIÓN</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
